@@ -1,0 +1,212 @@
+1)
+import java.util.Scanner;
+class bank
+{
+    public int deposit, withdraw,balance;
+    public String name;
+
+    public bank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter deposit money");
+        deposit=sc.nextInt();
+        balance=deposit;
+    }
+}
+class savingsbank extends bank
+{
+    public savingsbank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter name ");
+        name=sc.nextLine();
+        System.out.print("enetr withdrawal money");
+        withdraw=sc.nextInt();
+
+
+    }
+}
+public class main
+{
+public static void main(String args[])
+{
+    bank bm =new bank();
+    savingsbank sa=new savingsbank();
+    System.out.println("account holder name :"+sa.name);
+    System.out.println("deposited money :"+bm.deposit);
+    System.out.print("total money after withdrawl");
+    bm.balance=bm.balance-sa.withdraw;
+    System.out.print(bm.balance);
+
+}
+}
+
+
+
+
+
+2)
+
+import java.util.Scanner;
+class bank
+{
+    public int deposit, withdraw,balance;
+    public String name;
+
+    public bank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter deposit money");
+        deposit=sc.nextInt();
+        balance=deposit;
+    }
+}
+class savingsbank extends bank
+{
+    public savingsbank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter name ");
+        name=sc.nextLine();
+        System.out.print("enetr withdrawal money");
+        withdraw=sc.nextInt();
+
+
+    }
+}
+public class main
+{
+public static void main(String args[])
+{
+    bank bm =new bank();
+    savingsbank sa=new savingsbank();
+    System.out.println("account holder name :"+sa.name);
+    System.out.println("deposited money :"+bm.deposit);
+    System.out.print("total money after withdrawl");
+    bm.balance=bm.balance-sa.withdraw;
+    System.out.print(bm.balance);
+
+}
+}
+
+
+3)
+import java.util.Scanner;
+class bank
+{
+    public int deposit, withdraw,balance;
+    public String name;
+
+    public bank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter deposit money");
+        deposit=sc.nextInt();
+        balance=deposit;
+    }
+}
+class savingsbank extends bank
+{
+    public savingsbank()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter name ");
+        name=sc.nextLine();
+        System.out.print("enetr withdrawal money");
+        withdraw=sc.nextInt();
+
+
+    }
+}
+public class main
+{
+public static void main(String args[])
+{
+    bank bm =new bank();
+    savingsbank sa=new savingsbank();
+    System.out.println("account holder name :"+sa.name);
+    System.out.println("deposited money :"+bm.deposit);
+    System.out.print("total money after withdrawl");
+    bm.balance=bm.balance-sa.withdraw;
+    System.out.print(bm.balance);
+
+}
+}
+
+
+4)
+
+import java.util.Scanner;
+class vehical
+{
+    public String fule_type,make,model;
+    public int year,speed,fule_capacity;
+    public double mileage,distance,fule_consumed;
+}
+class truck extends vehical
+{
+    public int  number_of_wheels,capacity;
+    public truck()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the model of truck");
+        model=sc.nextLine();
+        System.out.println("enter the fule type of truck");
+        fule_type=sc.nextLine();
+        System.out.println("enter the make of truck :");
+        make=sc.nextLine();
+        System.out.println("enter the speed of truck");
+        speed=sc.nextInt();
+        System.out.println("enter diastance traveled by truck :");
+        distance=sc.nextInt();
+        System.out.println("fule capacity of truck");
+        fule_capacity=sc.nextInt();
+
+       mileage = (double) distance / fule_consumed;
+    }
+}
+public class test
+{
+    public static void main(String args[])
+    {
+        truck t=new truck();
+        System.out.println("truck model :"+t.model);
+        System.out.println("truck make :"+t.make);
+        System.out.println("fule type :"+t.fule_type);
+        System.out.println("speed of truck :"+t.speed);
+        System.out.println("fule capacity of truck is :"+t.fule_capacity);
+        System.out.println("distance travelled by truck :"+t.distance);
+        System.out.println("millage of truck is :"+t.mileage);
+    }
+}
+
+5)
+
+import java.util.Scanner;
+class shape
+{
+    public double area,perimeter;
+    public double pi,radius;
+}
+class circle extends shape
+{
+    public circle()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter radius of circle :");
+        radius = sc.nextDouble();
+        if(radius>=0)
+        {
+        pi=3.14;
+        area=pi*radius*radius;
+        }
+    }
+}
+public class test
+{
+    public static void main(String args[])
+    {
+        circle s=new circle();
+        System.out.println("Area of circle is :"+s.area);
+    }
+}
